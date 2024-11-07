@@ -1,0 +1,3 @@
+@function assombrir($color, $percentage) { // Déclaration d'une fonction nommée assombrir
+    @return darken($color, $percentage); // Utilisation de la fonction darken pour assombrir la couleur fournie en fonction du pourcentage
+}

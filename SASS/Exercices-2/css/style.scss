@@ -1,0 +1,28 @@
+@import 'partials/variables'; // Importation des variables définies dans un fichier partiel
+@import 'partials/mixins'; // Importation des mixins définis dans un fichier partiel
+
+body {
+    header {
+        background-color: $primary-color; // Définit la couleur de fond de l'en-tête avec la variable $primary-color
+    }
+    main {
+        p {
+            color: $text-color; // Définit la couleur du texte des paragraphes avec la variable $text-color
+        }
+        .un {
+            @include boutonUn(blue, white) // Inclut le mixin boutonUn pour appliquer des styles prédéfinis à ce bouton
+        }
+        .un:hover {
+            background-color: grey; // Change la couleur de fond à gris au survol du bouton .un
+        }
+        .deux {
+            @include boutonUn(green, black); // Inclut le mixin boutonDeux pour appliquer des styles prédéfinis à ce bouton
+        }
+        .deux:hover {
+            background-color: grey; // Change la couleur de fond à gris au survol du bouton .deux
+        }
+    }
+    footer {
+        background-color: $secondary-color; // Définit la couleur de fond du pied de page avec la variable $secondary-color
+    }
+}

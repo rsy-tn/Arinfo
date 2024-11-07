@@ -1,0 +1,27 @@
+<!DOCTYPE html> <!-- Déclaration du type de document -->
+<html lang="fr"> <!-- Langue du document définie en français -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Définit l'encodage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configuration de la mise en page pour les appareils mobiles -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Inclusion de la bibliothèque jQuery -->
+    <script src="js/script.js" defer></script> <!-- Inclusion du script JavaScript avec le chargement différé -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Lien vers la feuille de style CSS -->
+    <title>To Do List</title> <!-- Titre de la page affiché dans l'onglet du navigateur -->
+</head>
+
+<body>
+    <div id="todo-container"> <!-- Conteneur principal pour la To Do List -->
+        <h1>Ma To Do List</h1> <!-- Titre de la To Do List -->
+        <input type="text" id="new-task" placeholder="Nouvelle tâche">
+        <!-- Champ de saisie pour ajouter une nouvelle tâche -->
+        <button id="add-task-btn">Ajouter tâche</button> <!-- Bouton pour ajouter la tâche -->
+        <ul id="task-list"></ul> <!-- Liste non ordonnée pour afficher les tâches -->
+        <button id="clear-completed-btn">Supprimer les tâches complétées</button>
+        <!-- Bouton pour supprimer les tâches complétées -->
+    </div>
+</body>
+
+</html>

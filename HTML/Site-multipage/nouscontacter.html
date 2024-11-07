@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr"> <!-- Définition de la langue du document comme français. -->
+<head>
+    <meta charset="UTF-8"> <!-- Définit l'encodage des caractères. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rend le site responsive. -->
+    <title>Contactez-nous</title> <!-- Titre de la page. -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Page d'accueil</a></li> <!-- Lien vers la page d'accueil, corrigé pour fermer la balise <a>. -->
+                <li><a href="le-perigord.html">Le Périgord</a></li>
+                <li><a href="notre-gite.html">Notre gîte</a></li>
+                <li><a href="nouscontacter.html">Contactez-nous</a></li> <!-- Correction de l'orthographe "Constactez-nous". -->
+            </ul>
+        </nav>
+        <h1>Contactez-nous</h1> <!-- Titre principal de la page. -->
+    </header>
+
+    <main>
+        <section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- Vidéo intégrée, n'oubliez pas de remplacer VIDEO_ID par l'identifiant de la vidéo souhaitée. -->
+        </section>
+
+        <section>
+            <h3>Nos coordonnées</h3> <!-- Titre pour les coordonnées de contact. -->
+            <p>Adresse : <a href="https://www.google.com/maps/search/?api=1&query=16+Rue+du+Président+Wilson,+24000+Périgueux">16 Rue du Président Wilson, 24000 Périgueux</a></p> <!-- Lien Google Maps pour l'adresse. -->
+            <p>Téléphone : <a href="tel:0553027490">05 53 02 74 90</a></p> <!-- Lien pour appeler le numéro. -->
+            <p>Email : <a href="mailto:perigord@hotmail.fr">perigord@hotmail.fr</a></p> <!-- Lien pour envoyer un email. -->
+        </section>
+
+        <section>
+            <h3>Horaires d'ouverture</h3> <!-- Titre pour les horaires d'ouverture. -->
+            <div>
+                <table border="1"> <!-- Tableau des horaires. -->
+                    <tr>
+                        <th>Jour</th> <!-- En-tête de la colonne Jour. -->
+                        <th>Horaires</th> <!-- En-tête de la colonne Horaires. -->
+                    </tr>
+                    <tr>
+                        <td>Lundi</td>
+                        <td>9h - 17h</td>
+                    </tr>
+                    <tr>
+                        <td>Mardi</td>
+                        <td>9h - 17h</td>
+                    </tr>
+                    <tr>
+                        <td>Mercredi</td>
+                        <td>9h - 17h</td>
+                    </tr>
+                    <tr>
+                        <td>Jeudi</td>
+                        <td>9h - 17h</td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td>9h - 17h</td>
+                    </tr>
+                    <tr>
+                        <td>Samedi</td>
+                        <td>9h - 17h</td>
+                    </tr>
+                    <tr>
+                        <td>Dimanche</td>
+                        <td>Fermé</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h3>Formulaire de contact</h3> <!-- Titre pour le formulaire de contact. -->
+            <div>
+                <form action="" method="post"> <!-- Formulaire avec méthode POST. -->
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <label for="name">Nom:</label> <!-- Étiquette pour le champ du nom. -->
+                                <input type="text" id="name" name="name" placeholder="Nom" required> <!-- Champ de texte pour le nom. -->
+                            </li>
+                            <li>
+                                <label for="email">Adresse mail:</label> <!-- Étiquette pour le champ de l'email. -->
+                                <input type="email" id="email" name="email" placeholder="Adresse mail" required> <!-- Champ de texte pour l'email. -->
+                            </li>
+                            <li>
+                                <label for="phone">Numéro de téléphone:</label> <!-- Étiquette pour le champ du numéro de téléphone. -->
+                                <input type="tel" id="phone" name="phone" placeholder="Numéro de téléphone" required> <!-- Champ de téléphone. -->
+                            </li>
+                            <li>
+                                <label for="message">Message:</label> <!-- Étiquette pour le champ de message. -->
+                                <textarea name="message" id="message" placeholder="Votre message ici..." required></textarea> <!-- Zone de texte pour le message, ajout de required pour l'obligation. -->
+                            </li>
+                        </ul>
+                        <button type="reset">Effacer</button> <!-- Bouton pour réinitialiser le formulaire. -->
+                        <button type="submit">Envoyer</button> <!-- Bouton pour soumettre le formulaire. -->
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <h3>Images du Périgord Noir</h3> <!-- Titre pour la galerie d'images. -->
+            <div>
+                <img src="img/1.jpg" alt="Paysage du Périgord Noir" width="200"> <!-- Image avec texte alternatif descriptif. -->
+                <img src="img/2.jpg" alt="Carte du Périgord Noir" width="200"> <!-- Autre image avec texte alternatif. -->
+                <img src="img/3.jpg" alt="Un autre paysage du Périgord Noir" width="200"> <!-- Troisième image avec texte alternatif. -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; Copyright 2019 – <!-- Affichage des droits d'auteur. -->
+            <a href="https://www.guide-du-perigord.com/fr/tourisme/decouvrir/visite-du-perigord/le-perigord-noir.html">Guide</a> <!-- Lien vers le guide du Périgord. -->
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+@mixin boutonUn($bg, $color) {
+  // Déclaration d'un mixin nommé boutonUn
+  background-color: $bg; // Définit la couleur de fond du bouton à bleu
+  color: $color; // Définit la couleur du texte du bouton à blanc
+}
+
+@mixin responsive($size) {
+  // Déclaration d'un mixin nommé responsive qui prend un paramètre $size
+  @if $size == small {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $size == xsmall {
+    @media screen and (max-width: 480px) {
+      @content;
+    }
+  }
+}

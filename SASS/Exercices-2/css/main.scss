@@ -1,0 +1,29 @@
+@import 'partials/variables'; // Importation des variables définies dans un fichier partiel
+@import 'partials/mixins'; // Importation des mixins définis dans un fichier partiel
+@import 'partials/base'; // Importation de styles de base définis dans un fichier partiel
+
+body {
+    header {
+        h1 {
+            font-size: 48px; // Définit la taille de la police pour h1 dans l'en-tête
+
+            @include responsive(small) { // Inclusion d'un mixin de responsive design pour les écrans de 768px ou moins
+                font-size: 36px; // Réduit la taille de la police à 36px
+            }
+            
+            @include responsive(xsmall) { // Inclusion d'un mixin de responsive design pour les écrans de 480px ou moins
+                font-size: 24px; // Réduit la taille de la police à 24px
+            }
+        }
+    }
+
+    footer {
+        background-color: assombrir(pink, 10%); // Applique une couleur de fond au pied de page en assombrissant le rose de 30%
+    }
+
+    @for $i from 1 through 4 { // Boucle pour générer des classes de marge
+        .m-#{$i} { // Génère des classes .m-1, .m-2, .m-3, .m-4
+            margin: $i * .25rem; // Définit la marge avec des valeurs de 0 à 1rem, augmentant de 0.25rem à chaque itération
+        }
+    }
+}

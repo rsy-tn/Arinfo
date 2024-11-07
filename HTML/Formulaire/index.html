@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulaire</h1>
+    </header>
+    
+    <main>
+        <form action="" method="post"> <!-- Ouvre un formulaire, avec méthode POST pour l'envoi des données -->
+            <fieldset> <!-- Crée un groupe d'éléments de formulaire -->
+                <legend>Formulaire de test</legend> <!-- Titre du groupe d'éléments -->
+
+                <div>
+                    <ul> <!-- Liste d'éléments de formulaire -->
+                        <li>
+                            <input type="radio" id="mr" name="civilite" value="Monsieur" checked> <!-- Bouton radio pour "Monsieur" -->
+                            <label for="mr">Monsieur</label> <!-- Étiquette associée au bouton radio -->
+                        </li>
+        
+                        <li>
+                            <input type="radio" id="mm" name="civilite" value="Madame"> <!-- Bouton radio pour "Madame" -->
+                            <label for="mm">Madame</label> <!-- Étiquette associée au bouton radio -->
+                        </li>
+                        <li>
+                            <input type="radio" id="a" name="civilite" value="Autres"> <!-- Bouton radio pour "Autres" -->
+                            <label for="a">Autres</label> <!-- Étiquette associée au bouton radio -->
+                        </li>         
+
+                        <li>
+                            <label for="name">Nom:</label> <!-- Étiquette pour le champ du nom -->
+                            <input type="text" id="name" name="name" placeholder="Nom" required> <!-- Champ de texte pour le nom, requis -->
+                        </li>
+                        <li>
+                            <label for="firstname">Prénom:</label> <!-- Étiquette pour le champ du prénom -->
+                            <input type="text" id="firstname" name="firstname" placeholder="Prénom" required> <!-- Champ de texte pour le prénom, requis -->
+                        </li>
+                        <li>
+                            <label for="phone">Numéro de téléphone:</label> <!-- Étiquette pour le champ du numéro de téléphone -->
+                            <input type="tel" id="phone" name="phone" placeholder="Numéro de téléphone" required> <!-- Champ de téléphone, requis -->
+                        </li>
+                        <li>
+                            <label for="email">Adresse mail:</label> <!-- Étiquette pour le champ de l'email -->
+                            <input type="email" id="email" name="email" placeholder="Adresse mail" required> <!-- Champ de texte pour l'email, requis -->
+                        </li>
+                        <li>
+                            <label for="department">Département:</label> <!-- Étiquette pour le champ de sélection du département -->
+                            <select name="departement" id="department" required> <!-- Menu déroulant pour sélectionner un département, requis -->
+                                <option value="" selected disabled>Veuillez choisir une option</option> <!-- Option par défaut, non sélectionnable -->
+                                <option value="1">Rhône</option> <!-- Option pour le Rhône -->
+                                <option value="2">Isère</option> <!-- Option pour l'Isère -->
+                            </select>
+                        </li>
+                        <li>
+                            <label for="message">Message:</label> <!-- Étiquette pour le champ de message -->
+                            <textarea name="message" id="message" placeholder="Votre message ici..."></textarea> <!-- Zone de texte pour le message -->
+                        </li>
+                    </ul>
+                    <button type="reset">Effacer</button> <!-- Bouton pour réinitialiser le formulaire -->
+                    <button type="submit">Envoyer</button> <!-- Bouton pour soumettre le formulaire -->
+                </div>
+
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <!-- Section de pied de page (vide pour l'instant) -->
+    </footer>
+    
+</body>
+
+</html>

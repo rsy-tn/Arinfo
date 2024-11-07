@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8"> <!-- Définition de l'encodage des caractères en UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Assure la compatibilité avec les versions récentes d'Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuration de l'affichage responsive pour les différents appareils -->
+    <script src="js/fonctions.js" defer></script> <!-- Lien vers un fichier JavaScript externe, exécuté après le chargement de la page -->
+    <title>Ton ami Didou !</title> <!-- Titre de la page, apparaissant dans l'onglet du navigateur -->
+</head>
+
+<body>
+    <h1>Ton ami Didou !</h1> <!-- Titre principal de la page affiché en grand format -->
+
+    <p>Didou, dessine-moi <b id="id_quoi">un animal...</b></p>
+    <!-- Texte demandant à Didou de dessiner un animal, avec un élément à modifier via JavaScript -->
+
+    <p><img id="id_image" src="assets/img/didou.jpg" height="350px" /></p>
+    <!-- Image principale de Didou avec un ID pour la manipuler via JavaScript -->
+
+    <!-- Liste de boutons pour que l'utilisateur demande différents dessins d'animaux -->
+    <input type="button" value="chien" id="btn_chien"> <!-- Bouton pour demander à dessiner un chien -->
+    <input type="button" value="cochon" id="btn_cochon"> <!-- Bouton pour demander à dessiner un cochon -->
+    <input type="button" value="singe" id="btn_singe"> <!-- Bouton pour demander à dessiner un singe -->
+    <input type="button" value="rat" id="btn_rat"> <!-- Bouton pour demander à dessiner un rat -->
+    <input type="button" value="ecureuil" id="btn_ecureuil"> <!-- Bouton pour demander à dessiner un écureuil -->
+    <input type="button" value="leopard" id="btn_leopard"> <!-- Bouton pour demander à dessiner un léopard -->
+
+    <button type="reset" id="btn_reset">reset</button> <!-- Bouton de réinitialisation (reset) -->
+
+    <div><br>
+        <!-- Images des animaux, initialement cachées et probablement affichées après interaction avec les boutons -->
+        <img src="assets/img/chien.jpg" alt="chien" id="img_chien" width="150px"> <!-- Image du chien -->
+        <img src="assets/img/cochon.jfif" alt="cochon" id="img_cochon" width="150px"> <!-- Image du cochon -->
+        <img src="assets/img/singe.jpg" alt="singe" id="img_singe" width="150px"> <!-- Image du singe -->
+        <img src="assets/img/rat.jpg" alt="rat" id="img_rat" width="150px"> <!-- Image du rat -->
+        <img src="assets/img/squirrel.jfif" alt="ecureuil" id="img_ecureuil" width="150px"> <!-- Image de l'écureuil -->
+        <img src="assets/img/cheetah.jpg" alt="leopard" id="img_leopard" width="150px"> <!-- Image du léopard -->
+    </div>
+</body>
+
+</html>

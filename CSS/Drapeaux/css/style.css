@@ -1,0 +1,240 @@
+.columnL, .columnR {
+    display: flex;
+    flex-direction: column;
+    /* Les colonnes gauche et droite sont disposées verticalement */
+}
+
+.fr {
+    height: 200px;
+    width: 400px;
+    border: 2px solid black;
+    display: flex;
+    /* Drapeau de la France avec 3 colonnes alignées horizontalement */
+}
+
+.bluefr {
+    height: 200px;
+    width: 133px;
+    background-color: blue;
+    /* Colonne bleue pour le drapeau français */
+}
+
+.whitefr {
+    height: 200px;
+    width: 133px;
+    background-color: white;
+    /* Colonne blanche pour le drapeau français */
+}
+
+.redfr {
+    height: 200px;
+    width: 134px;
+    background-color: red;
+    /* Colonne rouge pour le drapeau français */
+}
+
+.en {
+    height: 200px;
+    width: 400px;
+    border: 2px solid black;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    /* Drapeau imaginaire, divisé en 4 carrés avec un espacement entre eux */
+}
+
+.en div {
+    width: 45%;
+    height: 40%;
+    background-color: white;
+    /* Les 4 carrés blancs sur fond rouge pour le drapeau imaginaire */
+}
+
+.lao {
+    height: 200px;
+    width: 400px;
+    border: 2px solid black;
+    /* Conteneur du drapeau du Laos */
+}
+
+.redTop {
+    height: 50px;
+    width: 400px;
+    background-color: red;
+    /* Bande rouge supérieure du drapeau laotien */
+}
+
+.blueLao {
+    height: 100px;
+    width: 400px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    /* Bande bleue centrale avec un cercle blanc centré */
+}
+
+.blueLao img {
+    height: 100%;
+    /* Cercle blanc au centre du drapeau du Laos */
+}
+
+.redBot {
+    height: 50px;
+    width: 400px;
+    background-color: red;
+    /* Bande rouge inférieure du drapeau laotien */
+}
+
+.al {
+    height: 200px;
+    width: 400px;
+    border: 2px solid black;
+    /* Conteneur du drapeau allemand */
+}
+
+.blackAl {
+    height: 66px;
+    width: 400px;
+    background-color: black;
+    /* Bande noire du drapeau allemand */
+}
+
+.redAl {
+    height: 67px;
+    width: 400px;
+    background-color: red;
+    /* Bande rouge du drapeau allemand */
+}
+
+.yellowAl {
+    height: 67px;
+    width: 400px;
+    background-color: yellow;
+    /* Bande jaune du drapeau allemand */
+}
+
+.se {
+    height: 200px;
+    width: 400px;
+    border: 2px solid black;
+    display: flex;
+    /* Conteneur du drapeau sénégalais, 3 bandes verticales */
+}
+
+.greenSe {
+    height: 200px;
+    width: 133px;
+    background-color: green;
+    /* Bande verte du drapeau sénégalais */
+}
+
+.yellowSe {
+    height: 200px;
+    width: 133px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Bande jaune avec une étoile verte centrée */
+}
+
+.yellowSe img {
+    height: auto;
+    width: 80%;
+    mix-blend-mode: darken;
+    filter: hue-rotate(15deg);
+    /* Ajuste la couleur de l'étoile pour mieux correspondre */
+}
+
+.redSe {
+    height: 200px;
+    width: 134px;
+    background-color: red;
+    /* Bande rouge du drapeau sénégalais */
+}
+
+.br {
+    height: 200px;
+    width: 400px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    /* Conteneur pour le drapeau breton */
+}
+
+.topContainer {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* Partie supérieure du drapeau breton (hermines et bandes noires/blanches) */
+}
+
+.leftBr {
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    /* Partie gauche avec des hermines */
+}
+
+.rightBr {
+    height: 100%;
+    width: 70%;
+    background-color: white;
+    /* Partie droite avec des bandes noires et blanches */
+}
+
+.botContainer {
+    height: 60%;
+    width: 100%;
+    /* Partie inférieure avec plus de bandes noires et blanches */
+}
+
+.rightBr div {
+    height: 25%;
+    /* Bandes noires/blanches verticales dans la partie droite */
+}
+
+.botContainer div {
+    height: 20%;
+    /* Bandes noires/blanches dans la partie inférieure */
+}
+
+.blackBr {
+    width: 100%;
+    background-color: black;
+    /* Bandes noires */
+}
+
+.items {
+    width: 100%;
+    height: 33.3%;
+    display: flex;
+    /* Disposition des hermines (3 par ligne) */
+}
+
+.items div {
+    height: 100%;
+    width: 100%;
+}
+
+.items div img {
+    height: 100%;
+    /* Taille des images des hermines */
+}
+
+.middle {
+    justify-content: space-evenly;
+    /* Hermines centrées */
+}
+
+.middle div {
+    width: unset;
+    /* Taille ajustée des div pour les hermines */
+}
+
+.parent {
+    display: flex;
+    /* Conteneur parent avec deux colonnes */
+}

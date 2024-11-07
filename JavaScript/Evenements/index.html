@@ -1,0 +1,57 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/salutation.js" defer></script>
+    <!-- Lien vers un fichier JavaScript externe pour ajouter des fonctionnalités -->
+    <title>Mes Sincères Salutations</title>
+</head>
+
+<body>
+    <form>
+        <!-- Fieldset pour les informations d'identité de l'utilisateur -->
+        <fieldset>
+            <legend>Identité</legend>
+            <!-- Champ pour le prénom de l'utilisateur -->
+            <input type="text" name="prenom" id="prenom" placeholder="saisissez votre prénom">
+            <!-- Champ pour le nom de famille de l'utilisateur -->
+            <input type="text" name="nom" id="nom" placeholder="saisissez votre nom">
+            <!-- Champ pour le titre ou le surnom de l'utilisateur -->
+            <input type="text" name="titre" id="titre" placeholder="saisissez votre titre / surnom">
+            <!-- Sélection déroulante pour choisir la race de l'utilisateur -->
+            <select name="race" id="race">
+                <option value="human" selected>Humain(e)</option> <!-- Option par défaut -->
+                <option value="elf">Elfe</option>
+                <option value="ork">Orque</option>
+            </select>
+            <!-- Boutons radio pour sélectionner le rang de l'utilisateur -->
+            <input type="radio" name="rank" id="roturier" value="roturier" checked>roture
+            <input type="radio" name="rank" id="noble" value="noble"> noblesse
+            <input type="radio" name="rank" id="royal" value="royal"> Royauté
+        </fieldset>
+
+        <!-- Fieldset pour les classes de personnage -->
+        <fieldset>
+            <legend>Classe(s) du personnage</legend>
+            <div id="classes">
+                <!-- Cases à cocher pour les différentes classes de personnage -->
+                <input type="checkbox" name="priest" id="priest" class="classe"> Prêtre
+                <input type="checkbox" name="warrior" id="warrior" class="classe"> Guerrier
+                <input type="checkbox" name="rogue" id="rogue" class="classe"> Voleur
+                <input type="checkbox" name="mage" id="mage" class="classe"> Mage
+            </div>
+        </fieldset>
+
+        <!-- Bouton pour déclencher l'action de salutation -->
+        <button id="btn_salutation">Dit bonjour</button>
+    </form>
+
+    <!-- Divs pour afficher les résultats -->
+    <div id="emotes"></div> <!-- Pour afficher des émoticônes -->
+    <div id="Salutations"></div> <!-- Pour afficher les salutations -->
+    <div id="classe"></div> <!-- Pour afficher les classes sélectionnées -->
+</body>
+
+</html>

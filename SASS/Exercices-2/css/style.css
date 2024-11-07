@@ -1,0 +1,23 @@
+body header {
+  background-color: red;
+}
+body main p {
+  color: green;
+}
+body main .un {
+  background-color: blue;
+  color: white;
+}
+body main .un:hover {
+  background-color: grey;
+}
+body main .deux {
+  background-color: green;
+  color: black;
+}
+body main .deux:hover {
+  background-color: grey;
+}
+body footer {
+  background-color: pink;
+}/*# sourceMappingURL=style.css.map */

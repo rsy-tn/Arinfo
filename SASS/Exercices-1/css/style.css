@@ -1,0 +1,31 @@
+body header {
+  background-color: #3498db;
+}
+body header .container {
+  padding: 20px;
+}
+body header .container h1 {
+  font-size: 2rem;
+}
+body header .container p {
+  line-height: 1.6;
+}
+body main .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main button {
+  border-radius: 5px;
+}
+body main .carte {
+  width: 100px;
+  height: 200px;
+  background-color: #30bf8c;
+  border-radius: 10px;
+  border: 5px solid;
+  border-color: #006700;
+}
+body footer {
+  background-color: #2ecc71;
+}/*# sourceMappingURL=style.css.map */

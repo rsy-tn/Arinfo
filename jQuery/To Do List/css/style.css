@@ -1,0 +1,7 @@
+.line { 
+    text-decoration: line-through; /* Applique un style barré au texte pour indiquer que la tâche est complétée */
+}
+
+li { 
+    list-style-type: none; /* Supprime les puces des éléments de liste non ordonnée */
+}

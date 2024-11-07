@@ -1,0 +1,37 @@
+section {
+    height: 25vh;
+    background-color: blue;
+    padding: 20px;
+    border: 2px solid black;
+    flex: 1;
+}
+
+div {
+    display: flex;
+}
+
+.image {
+    width: 100vw;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+}
+
+.accueil {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+}

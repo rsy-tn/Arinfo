@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr"> <!-- Déclaration du type de document HTML5 et langue du document est le français -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Définition de l'encodage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configuration de l'affichage responsive pour les différents appareils -->
+    <link rel="stylesheet" href="index.css"> <!-- Lien vers la feuille de style CSS pour la mise en forme de la page -->
+    <script src="index.js" defer></script>
+    <!-- Lien vers le fichier JavaScript externe, exécuté après le chargement de la page -->
+    <title>Calculatrice</title> <!-- Titre de la page, apparaissant dans l'onglet du navigateur -->
+</head>
+
+<body>
+    <h1>Calculatrice</h1> <!-- Titre principal de la page affiché en grand format -->
+
+    <div class="calculator"> <!-- Conteneur principal de la calculatrice -->
+        <input type="hidden" name="tampon" id="tampon">
+        <!-- Champ caché pour stocker des valeurs temporaires (non utilisé dans le code visible) -->
+        <div id="ecran"></div> <!-- Écran d'affichage pour montrer le calcul ou le résultat -->
+
+        <div class="touches"> <!-- Conteneur pour les boutons de la calculatrice -->
+            <button>1</button> <!-- Bouton pour le chiffre 1 -->
+            <button>2</button> <!-- Bouton pour le chiffre 2 -->
+            <button>3</button> <!-- Bouton pour le chiffre 3 -->
+            <button>+</button> <!-- Bouton pour l'opération d'addition -->
+            <button>4</button> <!-- Bouton pour le chiffre 4 -->
+            <button>5</button> <!-- Bouton pour le chiffre 5 -->
+            <button>6</button> <!-- Bouton pour le chiffre 6 -->
+            <button>-</button> <!-- Bouton pour l'opération de soustraction -->
+            <button>7</button> <!-- Bouton pour le chiffre 7 -->
+            <button>8</button> <!-- Bouton pour le chiffre 8 -->
+            <button>9</button> <!-- Bouton pour le chiffre 9 -->
+            <button>*</button> <!-- Bouton pour l'opération de multiplication -->
+            <button>0</button> <!-- Bouton pour le chiffre 0 -->
+            <button>C</button> <!-- Bouton pour effacer (reset) le calcul -->
+            <button>=</button> <!-- Bouton pour évaluer l'expression -->
+            <button>/</button> <!-- Bouton pour l'opération de division -->
+        </div>
+    </div>
+</body>
+
+</html>

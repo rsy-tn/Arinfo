@@ -1,0 +1,36 @@
+@import 'partials/variables';
+@import 'partials/mixins';
+
+body {
+    header {
+        background-color: $Cprim;
+        .container {
+            padding: 20px;
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                line-height: 1.6;
+            }
+        }
+    }
+    main {
+        .box {
+            @include box;
+        }
+        button {
+            @include border-radius(5px);
+        }
+        .carte {
+            width: 100px;
+            height: 200px;
+            background-color: $color-mix;
+            @include border-radius(10px);
+            border: 5px solid;
+            border-color: darken(green, 5%);
+        }
+    }
+    footer {
+        background-color: $Csec;
+    }
+}

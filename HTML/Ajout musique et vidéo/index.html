@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!-- Déclaration du type de document HTML5 -->
+<html lang="fr"> <!-- Début du document HTML avec l'attribut de langue en français -->
+<head>
+    <meta charset="UTF-8"> <!-- Spécifie le codage des caractères en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Optimise l'affichage pour les appareils mobiles -->
+    <title>Ajout musique et vidéo</title> <!-- Titre de la page qui s'affiche dans l'onglet du navigateur -->
+</head>
+
+<body> <!-- Début du corps du document -->
+    <header> <!-- En-tête du document -->
+        <h1>Ajout de musique et vidéo</h1> <!-- Titre principal de la page -->
+    </header>
+
+    <main> <!-- Section principale du contenu -->
+        <h2>Musique</h2> <!-- Sous-titre pour la section Musique -->
+
+        <!-- Bloc audio avec des contrôles pour lire la musique -->
+        <audio controls> 
+            <!-- Source audio au format OGG -->
+            <source src="/Audios-vidéos/jasmin.ogg" type="audio/ogg"/>
+            <!-- Source audio au format MP3 -->
+            <source src="/Audios-vidéos/jasmin.mp3" type="audio/mp3"/>
+        </audio>
+
+        <!-- Lien pour télécharger ou ouvrir le fichier audio OGG -->
+        <a href="/Audios-vidéos/jasmin.ogg">Lien audio ogg</a>
+        <!-- Lien pour télécharger ou ouvrir le fichier audio MP3 -->
+        <a href="/Audios-vidéos/jasmin.mp3">Lien audio mp3</a>
+
+        <h2>Vidéo</h2> <!-- Sous-titre pour la section Vidéo -->
+
+        <!-- Bloc vidéo avec des contrôles et une largeur de 500px -->
+        <video controls width="500" src="/Audios-vidéos/ui-design.mp4" type="video/mp4"></video>
+        <!-- Lien pour télécharger ou ouvrir le fichier vidéo MP4 -->
+        <a href="/Audios-vidéos/ui-design.mp4"></a>
+    </main>
+
+    <footer> <!-- Pied de page -->
+        &copy; Nom <!-- Mention de droits d'auteur -->
+    </footer>
+</body> <!-- Fin du corps du document -->
+
+</html> <!-- Fin du document HTML -->

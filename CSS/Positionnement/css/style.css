@@ -1,0 +1,77 @@
+.pixel {
+    height: 320px;                /* Hauteur de l'art en pixel */
+    width: 320px;                 /* Largeur de l'art en pixel */
+    border: 4px solid black;      /* Bordure noire autour du conteneur */
+    background-color: #0773f7;    /* Couleur de fond bleue */
+    position: absolute;           /* Positionnement absolu pour une manipulation précise des éléments enfants */
+}
+
+.cornGauche {
+    height: 40px;                 /* Hauteur de 40px */
+    width: 80px;                  /* Largeur de 80px */
+    background-color: yellow;     /* Couleur de fond jaune */
+    position: absolute;           /* Positionnement absolu */
+    left: 40px;                   /* Positionné à 40px de la gauche */
+}
+
+.cornDroit {
+    height: 40px;                 /* Hauteur de 40px */
+    width: 80px;                  /* Largeur de 80px */
+    background-color: yellow;     /* Couleur de fond jaune */
+    position: absolute;           /* Positionnement absolu */
+    right: 40px;                  /* Positionné à 40px de la droite */
+}
+
+.cornDownL {
+    position: absolute;           /* Positionnement absolu */
+    background-color: yellow;     /* Couleur de fond jaune */
+    height: 80px;                 /* Hauteur de 80px */
+    width: 40px;                  /* Largeur de 40px */
+    left: 80px;                   /* Positionné à 80px de la gauche */
+    top: 40px;                    /* Positionné à 40px du haut */
+}
+
+.cornDownR {
+    position: absolute;           /* Positionnement absolu */
+    background-color: yellow;     /* Couleur de fond jaune */
+    height: 80px;                 /* Hauteur de 80px */
+    width: 40px;                  /* Largeur de 40px */
+    right: 80px;                  /* Positionné à 80px de la droite */
+    top: 40px;                    /* Positionné à 40px du haut */
+}
+
+.center {
+    position: absolute;           /* Positionnement absolu */
+    background-color: yellow;     /* Couleur de fond jaune */
+    height: 200px;                /* Hauteur de 200px */
+    width: 80px;                  /* Largeur de 80px */
+    right: 120px;                 /* Positionné à 120px de la droite */
+    top: 80px;                    /* Positionné à 80px du haut */
+}
+
+.earL {
+    position: absolute;           /* Positionnement absolu */
+    background-color: yellow;     /* Couleur de fond jaune */
+    height: 80px;                 /* Hauteur de 80px */
+    width: 40px;                  /* Largeur de 40px */
+    left: 40px;                   /* Positionné à 40px de la gauche */
+    top: 120px;                   /* Positionné à 120px du haut */
+}
+
+.earR {
+    position: absolute;           /* Positionnement absolu */
+    background-color: yellow;     /* Couleur de fond jaune */
+    height: 80px;                 /* Hauteur de 80px */
+    width: 40px;                  /* Largeur de 40px */
+    right: 40px;                  /* Positionné à 40px de la droite */
+    top: 120px;                   /* Positionné à 120px du haut */
+}
+
+.mouth {
+    position: absolute;           /* Positionnement absolu */
+    background-color: yellow;     /* Couleur de fond jaune */
+    height: 80px;                 /* Hauteur de 80px */
+    width: 160px;                 /* Largeur de 160px */
+    right: 80px;                  /* Positionné à 80px de la droite */
+    top: 160px;                   /* Positionné à 160px du haut */
+}

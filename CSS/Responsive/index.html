@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" method="post"></form>
+        <fieldset>
+            <legend>Formulaire d'inscription</legend>
+            <ul>
+                <div>
+                    <li>
+                        <label for="name">Nom :</label><br>
+                        <input type="text" id="name" name="name" placeholder="Nom" required>
+                    </li>
+                    <li>
+                        <label for="firstname">Prénom :</label><br>
+                        <input type="text" id="firstname" name="firstname" placeholder="Prénom" required>
+                    </li>
+                </div>
+                <li>
+                    <label for="email">Adresse mail :</label><br>
+                    <input type="email" id="email" name="email" placeholder="Adresse mail" required>
+                </li>
+                <div>
+                    <li>
+                        <label for="password">Mot de passe :</label><br>
+                        <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+                    </li>
+                    <li>
+                        <label for="confirmpassword">Confirmer le mot de passe :</label><br>
+                        <input type="password" id="confirmpassword" name="confirmpassword"
+                            placeholder="Confirmer le mot de passe" required>
+                    </li>
+                </div>
+                <li>
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" id="message" rows="3" cols="20"
+                        placeholder="Votre message ici..."></textarea>
+                </li>
+            </ul>
+            <div class="button">
+                <button type="reset">Effacer</button>
+                <button type="submit">Envoyer</button>
+            </div>
+        </fieldset>
+    </div>
+
+</body>
+
+</html>
