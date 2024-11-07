@@ -1,0 +1,75 @@
+body {
+    /* Définit la hauteur du corps sur 100% de la hauteur de la fenêtre pour occuper tout l'espace */
+    height: 100vh;
+    /* Utilise Flexbox pour centrer le contenu horizontalement et verticalement dans la fenêtre */
+    display: flex;
+    align-items: center;
+    /* Centre verticalement */
+    justify-content: center;
+    /* Centre horizontalement */
+}
+
+body #container {
+    /* Applique Flexbox pour disposer les éléments dans une colonne centrée */
+    display: flex;
+    align-items: center;
+    /* Centre les éléments horizontalement dans le conteneur */
+    flex-direction: column;
+    /* Dispose les éléments verticalement en colonne */
+
+    /* Applique une bordure noire avec des coins arrondis */
+    border: 1px solid black;
+    border-radius: 10px;
+
+    /* Définit une largeur fixe et ajoute un espacement interne autour des éléments */
+    width: 500px;
+    padding: 30px;
+}
+
+ul {
+    /* Enlève les puces de la liste */
+    list-style-type: none;
+}
+
+li {
+    /* Ajoute un espacement vertical entre les éléments de la liste */
+    padding: 5px;
+}
+
+label {
+    /* Ajoute un espacement en bas des labels */
+    padding-bottom: 5px;
+}
+
+.check-read {
+    /* Définit la couleur verte */
+    color: green;
+}
+
+#add {
+    /* Style du bouton d'ajout avec une couleur de fond verte et du texte blanc */
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+    border-radius: 3px;
+    /* Coins arrondis du bouton */
+}
+
+#add:hover {
+    /* Change la couleur de fond du bouton d'ajout au survol pour un effet de surbrillance */
+    background-color: #45a049;
+}
+
+.delete-btn {
+    /* Style du bouton de suppression avec une couleur de fond rouge et du texte blanc */
+    background-color: #c02e3f;
+    color: white;
+    border-color: #c02e3f;
+    border-radius: 3px;
+    /* Coins arrondis du bouton */
+}
+
+.delete-btn:hover {
+    /* Change la couleur de fond du bouton de suppression au survol pour un effet de surbrillance */
+    background-color: #b62525;
+}
