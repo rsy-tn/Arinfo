@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+</head>
+
+<body>
+    <form method="post" action="traitement.php">
+        <!-- Champ NOM -->
+        <label for="name">Nom :</label>
+        <input type="text" name="name" id="name" required>
+        <!-- Champ Email -->
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" required>
+        <!-- Champ Message -->
+        <label for="msg">Votre message : </label>
+        <textarea name="msg" id="msg" cols="30" rows="10" required>Ecrivez ici...</textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+
+</html>
